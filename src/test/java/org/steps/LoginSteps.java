@@ -29,6 +29,7 @@ public class LoginSteps {
 	{
 		System.out.println("This is Before 3");
 		System.out.println("Changes done by u");
+		System.out.println("New changes");
 	}
 	@Given("User enters the facebook url")
 	public void user_enters_the_facebook_url() {
