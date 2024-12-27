@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="106.741" tests="6" skipped="0" failures="1" errors="0">
+<testcase classname="Passing the data at the step level" name="User passing the data" time="0.136">
+<failure type="java.lang.IndexOutOfBoundsException" message="Index 4 out of bounds for length 4">
+<![CDATA[java.lang.IndexOutOfBoundsException: Index 4 out of bounds for length 4
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at java.base/java.util.Collections$UnmodifiableList.get(Collections.java:1347)
+	at org.steps.DataImplementation.user_is_sending_the_data_at_the_step_level(DataImplementation.java:34)
+	at ✽.user is sending the data at the step level(file:///C:/Users/yuva4/eclipse-workspace/Cucumber_4PM/./src/test/resources/FEATURES/inputdata.feature:4)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user is sending the data at the step level............................failed
+]]></system-out>
+</testcase>
+<testcase classname="Facebook login check" name="Login facebook page" time="43.541">
+<system-out><![CDATA[
+Given User enters the facebook url..........................................passed
+When User enters the username...............................................passed
+And User enters the password................................................passed
+And User clicks the login button............................................passed
+Then User is on facebook home page..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Facebook login check" name="Login facebook page with valid credentials" time="21.56">
+<system-out><![CDATA[
+Given User enters the facebook url..........................................passed
+When User enters the username "Admin".......................................passed
+And User enters the password "123445".......................................passed
+And User clicks the login button............................................passed
+Then User is on facebook home page..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Facebook login check" name="Login facebook page with multiple data - #1.1" time="10.384">
+<system-out><![CDATA[
+Given User enters the facebook url..........................................passed
+When User enters the username "Oranium".....................................passed
+And User enters the password "456789".......................................passed
+And User clicks the login button............................................passed
+Then User is on facebook home page..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Facebook login check" name="Login facebook page with multiple data - #1.2" time="12.861">
+<system-out><![CDATA[
+Given User enters the facebook url..........................................passed
+When User enters the username "Tech"........................................passed
+And User enters the password "12356"........................................passed
+And User clicks the login button............................................passed
+Then User is on facebook home page..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Facebook login check" name="Login facebook page with multiple data - #1.3" time="16.941">
+<system-out><![CDATA[
+Given User enters the facebook url..........................................passed
+When User enters the username "admin".......................................passed
+And User enters the password "7215".........................................passed
+And User clicks the login button............................................passed
+Then User is on facebook home page..........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
